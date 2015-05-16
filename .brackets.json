@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/rdjong/public_html/rssReader/www/js/controllers.js",
+        "/home/rdjong/public_html/rssReader/gulpfile.js"
+    ]
+}

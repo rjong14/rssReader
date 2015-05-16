@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('rssReader.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
@@ -42,6 +42,12 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+})
+
+.controller('UserCtrl', function($scope, Users, $cordovaNetwork) {
+    //$scope.network = $cordovaNetwork.getNetwork();
+  $scope.title = "users";
+  Users.all($scope);
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
